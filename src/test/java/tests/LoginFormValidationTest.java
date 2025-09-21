@@ -3,6 +3,8 @@ package tests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Dimension;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,13 +37,15 @@ public class LoginFormValidationTest {
     @BeforeMethod
     public void setup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        options.addArguments("--remote-allow-origins=*");
-        // options.addArguments("--headless=new"); // optional
+        options.addArguments("--headless=new");            // run without GUI
+        options.addArguments("--no-sandbox");              // required in CI
+        options.addArguments("--disable-dev-shm-usage");   // avoid shared memory issues
+        options.addArguments("--remote-allow-origins=*");  // you already had this
+
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get(BASE_URL);
+        driver.manage().window().setSize(new Dimension(1280, 800)); // fixed size instead of maximize
     }
+
 
     @AfterMethod(alwaysRun = true)
     public void teardown() {
