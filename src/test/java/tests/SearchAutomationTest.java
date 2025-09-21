@@ -29,8 +29,8 @@ public class SearchAutomationTest {
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        driver.get("https://www.google.com");
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.get("https://www.saucedemo.com/");
     }
 
     @AfterMethod
@@ -41,19 +41,19 @@ public class SearchAutomationTest {
     }
 
     @Test
-    public void searchForSelenium() {
-        WebElement searchBox = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.name("q"))
-        );
-        searchBox.sendKeys("Selenium WebDriver");
-        searchBox.submit();
+    public void validLoginTest() {
+        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
+        username.sendKeys("standard_user");
 
-        // ✅ Wait for the URL to contain the query (guaranteed behavior)
-        wait.until(ExpectedConditions.urlContains("q=Selenium+WebDriver"));
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("secret_sauce");
 
-        // ✅ Relaxed assertion: check page source contains "Selenium"
-        String pageSource = driver.getPageSource();
-        Assert.assertTrue(pageSource.contains("Selenium"),
-                "Search results page should contain 'Selenium'");
+        WebElement loginButton = driver.findElement(By.id("login-button"));
+        loginButton.click();
+
+        // ✅ Check that we land on inventory page
+        wait.until(ExpectedConditions.urlContains("inventory"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"),
+                "User should be redirected to inventory page after login");
     }
 }
