@@ -1,0 +1,36 @@
+name: Maven Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Cache Selenium cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/selenium
+            ~/.cache/selenium-manager
+          key: selenium-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            selenium-${{ runner.os }}-
+
+      - name: Run tests with Maven (uses your TestNG suite)
+        run: mvn -B -e -DtestngXmlFile=testng-ci.xml test
