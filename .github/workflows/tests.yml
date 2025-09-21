@@ -22,15 +22,20 @@ jobs:
           java-version: "17"
           cache: maven
 
-      # ✅ Add Chrome to the GitHub runner
+      # Install Google Chrome on the runner
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@v1
         with:
           chrome-version: stable
 
-      - name: Run TestNG suite
-        run: mvn -B -q test
+      - name: Show Chrome version
+        run: chrome --version
 
+      # Run the small CI suite you created
+      - name: Run TestNG suite (CI)
+        run: mvn -B -q -Dsurefire.suiteXmlFiles=testng-ci.xml test
+
+      # Always upload reports, even on failure
       - name: Upload TestNG report
         if: always()
         uses: actions/upload-artifact@v4
