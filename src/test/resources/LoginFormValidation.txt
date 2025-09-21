@@ -1,0 +1,14 @@
+Scenario: Valid Login
+
+Steps:
+Open login page
+
+Enter valid username
+
+Enter valid password
+
+Click login button
+
+Expected Result:
+User is redirected to Secure Area page and sees the success flash message:
+“You logged into a secure area!”

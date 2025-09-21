@@ -1,0 +1,23 @@
+Scenario: Search with Valid Query
+Steps:
+1. Open Google homepage
+2. Enter "Selenium WebDriver" in the search bar
+3. Click the search button
+Expected Result:
+Search results for "Selenium WebDriver" are displayed
+
+Scenario: Search with Special Characters
+Steps:
+1. Open Google homepage
+2. Enter "@%*!@#" in the search bar
+3. Click the search button
+Expected Result:
+Search results are displayed and no error occurs
+
+Scenario: Empty Search
+Steps:
+1. Open Google homepage
+2. Leave the search bar empty
+3. Click the search button
+Expected Result:
+No results page appears or user is prompted to enter a search term

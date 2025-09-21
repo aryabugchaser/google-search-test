@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class LoginFormValidation {
+public class LoginFormValidationTest {
 
     private WebDriver driver;
     private WebDriverWait wait;
