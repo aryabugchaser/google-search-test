@@ -1,5 +1,5 @@
 
-![CI](https://github.com/aryabugchaser/google-search-test/actions/workflows/tests.yml/badge.svg)
+[![CI](https://github.com/aryabugchaser/google-search-test/actions/workflows/tests.yml/badge.svg)](https://github.com/aryabugchaser/google-search-test/actions/workflows/tests.yml)
 
 
 # QA Demo Project 🚀

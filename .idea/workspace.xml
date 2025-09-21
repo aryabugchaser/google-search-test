@@ -27,6 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -38,26 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestNGDemo" />
@@ -152,8 +155,115 @@
       <option name="project" value="LOCAL" />
       <updated>1758430794172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Maven CI workflow + TestNG suite">
+      <option name="closed" value="true" />
+      <created>1758434864494</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758434864494</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pom is updated">
+      <option name="closed" value="true" />
+      <created>1758435580343</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758435580343</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix testng-ci.xml (valid XML for CI suite)">
+      <option name="closed" value="true" />
+      <created>1758435864935</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758435864935</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix ChromeDriver setup for headless CI">
+      <option name="closed" value="true" />
+      <created>1758436175331</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758436175331</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix LoginFormValidationTest with waits + navigation">
+      <option name="closed" value="true" />
+      <created>1758436551941</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1758436551941</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed Google Address">
+      <option name="closed" value="true" />
+      <created>1758437223053</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1758437223053</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Simplify Google login tests for CI">
+      <option name="closed" value="true" />
+      <created>1758437655840</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758437655840</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update maven-test">
+      <option name="closed" value="true" />
+      <created>1758438018065</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758438018065</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add README">
+      <option name="closed" value="true" />
+      <created>1758438417842</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1758438417842</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add Google Search test to CI suite">
+      <option name="closed" value="true" />
+      <created>1758479683449</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1758479683449</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add CI status badge">
+      <option name="closed" value="true" />
+      <created>1758479800752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1758479800752</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add CI status badge">
+      <option name="closed" value="true" />
+      <created>1758480007932</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1758480007932</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -162,6 +272,17 @@
     <MESSAGE value="Refactor Search to POM (SearchPage + SearchResultsPage)" />
     <MESSAGE value="ci: add GitHub Actions workflow" />
     <MESSAGE value="ci: add GitHub Actions workflow updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: add GitHub Actions workflow updated" />
+    <MESSAGE value="Add Maven CI workflow + TestNG suite" />
+    <MESSAGE value="pom is updated" />
+    <MESSAGE value="Fix testng-ci.xml (valid XML for CI suite)" />
+    <MESSAGE value="Fix ChromeDriver setup for headless CI" />
+    <MESSAGE value="Fix LoginFormValidationTest with waits + navigation" />
+    <MESSAGE value="Fixed Google Address" />
+    <MESSAGE value="Simplify Google login tests for CI" />
+    <MESSAGE value="Update maven-test" />
+    <MESSAGE value="Add README" />
+    <MESSAGE value="Add Google Search test to CI suite" />
+    <MESSAGE value="Add CI status badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CI status badge" />
   </component>
 </project>
