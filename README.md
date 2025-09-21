@@ -1,5 +1,5 @@
 
-![Maven Tests](https://github.com/aryabugchaser/google-search-test/actions/workflows/maven-tests.yml/badge.svg)
+![CI](https://github.com/aryabugchaser/google-search-test/actions/workflows/tests.yml/badge.svg)
 
 
 # QA Demo Project 🚀
