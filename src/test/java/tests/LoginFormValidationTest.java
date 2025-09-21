@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.Dimension;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -30,10 +31,9 @@ public class LoginFormValidationTest {
         driver = new ChromeDriver(options);
         driver.manage().window().setSize(new Dimension(1280, 800));
 
-        // ✅ navigate to your login page BEFORE the tests run
-        driver.get("https://account.google.com/login"); // <-- change this to the real login page
+        // ✅ correct Google login page
+        driver.get("https://accounts.google.com/");
 
-        // ✅ create wait once
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
@@ -46,30 +46,33 @@ public class LoginFormValidationTest {
 
     @Test
     public void validLoginTest() {
-        // ✅ wait for element instead of direct findElement
-        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
-        username.sendKeys("myUser");
+        WebElement emailField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.name("identifier"))
+        );
+        emailField.sendKeys("fakeuser@gmail.com");
 
-        WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
-        password.sendKeys("myPass");
+        WebElement nextButton = wait.until(
+                ExpectedConditions.elementToBeClickable(By.id("identifierNext"))
+        );
+        nextButton.click();
 
-        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("loginBtn")));
-        loginButton.click();
-
-        // add your assertions here
+        // Assert password field appears
+        WebElement passwordField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.name("Passwd"))
+        );
+        Assert.assertTrue(passwordField.isDisplayed(), "Password field should be visible after clicking Next");
     }
 
     @Test
-    public void invalidLoginTest() {
-        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
-        username.sendKeys("wrongUser");
+    public void emptyFieldsLoginTest() {
+        WebElement nextButton = wait.until(
+                ExpectedConditions.elementToBeClickable(By.id("identifierNext"))
+        );
+        nextButton.click();
 
-        WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
-        password.sendKeys("wrongPass");
-
-        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("loginBtn")));
-        loginButton.click();
-
-        // add assertion for error message
+        WebElement errorMessage = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.o6cuMc"))
+        );
+        Assert.assertTrue(errorMessage.isDisplayed(), "Error message should appear for empty username");
     }
 }
