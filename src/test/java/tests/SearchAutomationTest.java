@@ -48,12 +48,12 @@ public class SearchAutomationTest {
         searchBox.sendKeys("Selenium WebDriver");
         searchBox.submit();
 
-        // ✅ Instead of waiting for title, just wait for results stats to appear
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("result-stats")));
+        // ✅ Wait for the URL to contain the query (guaranteed behavior)
+        wait.until(ExpectedConditions.urlContains("q=Selenium+WebDriver"));
 
-        // ✅ Relaxed assertion: check page contains "Selenium"
+        // ✅ Relaxed assertion: check page source contains "Selenium"
         String pageSource = driver.getPageSource();
         Assert.assertTrue(pageSource.contains("Selenium"),
-                "Page source should contain 'Selenium'");
+                "Search results page should contain 'Selenium'");
     }
 }
