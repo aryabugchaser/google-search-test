@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="CI Suite">
     <test name="SelectedClasses">
@@ -8,13 +7,4 @@
             <class name="tests.SearchAutomationTest"/>
         </classes>
     </test>
-=======
-<!DOCTYPE suite SYSTEM="https://testng.org/testng-1.0.dtd">
-<suite name="CI Suite">
-  <test name="Login only">
-    <classes>
-      <class name="tests.LoginTests"/>
-    </classes>
-  </test>
->>>>>>> origin/master
 </suite>
