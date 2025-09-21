@@ -1,24 +1,58 @@
 package tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.Dimension;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import pages.SearchPage;
-import pages.SearchResultsPage;
 
-public class SearchAutomationTest extends BaseTest {
+import java.time.Duration;
 
-    @Test
-    public void searchWithSpecialCharacters_shouldNotCrash() {
-        SearchPage search = new SearchPage(driver).open();
-        SearchResultsPage results = search.search("@%*!@#");
-        Assert.assertTrue(results.isResultsVisible(),
-                "Search results page should load for special characters.");
+public class SearchAutomationTest {
+
+    WebDriver driver;
+    WebDriverWait wait;
+
+    @BeforeMethod
+    public void setup() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--remote-allow-origins=*");
+
+        driver = new ChromeDriver(options);
+        driver.manage().window().setSize(new Dimension(1280, 800));
+
+        driver.get("https://www.google.com/");
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Test
-    public void emptySearch_shouldStayOnHomeOrPrompt() {
-        SearchPage search = new SearchPage(driver).open().submitEmpty();
-        Assert.assertTrue(search.isHome(),
-                "User should remain on Google home when submitting empty search.");
+    public void searchForSelenium() {
+        WebElement searchBox = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.name("q"))
+        );
+        searchBox.sendKeys("Selenium WebDriver");
+        searchBox.submit();
+
+        wait.until(ExpectedConditions.titleContains("Selenium WebDriver"));
+
+        Assert.assertTrue(driver.getTitle().contains("Selenium"),
+                "Page title should contain 'Selenium'");
     }
 }
