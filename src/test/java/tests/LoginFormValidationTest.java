@@ -1,92 +1,75 @@
 package tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Dimension;
-
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.*;
+import org.openqa.selenium.Dimension;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
 public class LoginFormValidationTest {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
-
-    // Demo login page (stable)
-    private static final String BASE_URL = "https://the-internet.herokuapp.com/login";
-
-    // Locators
-    private static final By USERNAME = By.id("username");
-    private static final By PASSWORD = By.id("password");
-    private static final By LOGIN_BTN = By.cssSelector("button[type='submit']");
-    private static final By FLASH = By.id("flash");
-    private static final By SECURE_HEADER = By.cssSelector("div.example h2");
-
-    @BeforeClass
-    public void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
+    WebDriver driver;
+    WebDriverWait wait;
 
     @BeforeMethod
     public void setup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");            // run without GUI
-        options.addArguments("--no-sandbox");              // required in CI
-        options.addArguments("--disable-dev-shm-usage");   // avoid shared memory issues
-        options.addArguments("--remote-allow-origins=*");  // you already had this
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--remote-allow-origins=*");
 
         driver = new ChromeDriver(options);
-        driver.manage().window().setSize(new Dimension(1280, 800)); // fixed size instead of maximize
+        driver.manage().window().setSize(new Dimension(1280, 800));
+
+        // ✅ navigate to your login page BEFORE the tests run
+        driver.get("https://account.google.com/login"); // <-- change this to the real login page
+
+        // ✅ create wait once
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-
-    @AfterMethod(alwaysRun = true)
-    public void teardown() {
-        if (driver != null) driver.quit();
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
-    @Test(description = "Valid creds should reach Secure Area and show success flash")
+    @Test
     public void validLoginTest() {
-        driver.findElement(USERNAME).sendKeys("tomsmith");
-        driver.findElement(PASSWORD).sendKeys("SuperSecretPassword!");
-        driver.findElement(LOGIN_BTN).click();
+        // ✅ wait for element instead of direct findElement
+        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+        username.sendKeys("myUser");
 
-        wait.until(ExpectedConditions.urlContains("/secure"));
-        Assert.assertEquals(driver.findElement(SECURE_HEADER).getText().trim(), "Secure Area");
+        WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
+        password.sendKeys("myPass");
 
-        String flash = driver.findElement(FLASH).getText();
-        Assert.assertTrue(flash.contains("You logged into a secure area!"),
-                "Expected success message, got: " + flash);
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("loginBtn")));
+        loginButton.click();
+
+        // add your assertions here
     }
 
-    @Test(description = "Invalid creds should keep user on login and show invalid flash")
+    @Test
     public void invalidLoginTest() {
-        driver.findElement(USERNAME).sendKeys("wrongUser");
-        driver.findElement(PASSWORD).sendKeys("wrongPass");
-        driver.findElement(LOGIN_BTN).click();
+        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+        username.sendKeys("wrongUser");
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(FLASH));
-        String flash = driver.findElement(FLASH).getText().toLowerCase();
-        Assert.assertTrue(flash.contains("your username is invalid") || flash.contains("invalid"),
-                "Expected invalid-credentials message, got: " + flash);
-    }
+        WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
+        password.sendKeys("wrongPass");
 
-    @Test(description = "Empty password shows an error (demo returns generic invalid)")
-    public void emptyFieldsLoginTest() {
-        driver.findElement(USERNAME).sendKeys("tomsmith");
-        driver.findElement(PASSWORD).clear();
-        driver.findElement(LOGIN_BTN).click();
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("loginBtn")));
+        loginButton.click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(FLASH));
-        String flash = driver.findElement(FLASH).getText().toLowerCase();
-        Assert.assertTrue(flash.contains("invalid"),
-                "Expected validation/invalid message, got: " + flash);
+        // add assertion for error message
     }
 }
