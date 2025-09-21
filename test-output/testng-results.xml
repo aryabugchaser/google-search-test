@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002806.png'>open</a>]]>
+    </line>
+    <line>
+      <![CDATA[📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002808.png'>open</a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-09-21T00:27:23 EDT" name="AutomationSuite" finished-at="2025-09-21T00:28:23 EDT" duration-ms="59408">
+    <groups>
+    </groups>
+    <test started-at="2025-09-21T00:27:23 EDT" name="All Tests" finished-at="2025-09-21T00:28:23 EDT" duration-ms="59408">
+      <class name="tests.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:05 EDT" name="setUp" finished-at="2025-09-21T00:28:06 EDT" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="demo_screenshot_mid_test()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:06 EDT" name="demo_screenshot_mid_test" finished-at="2025-09-21T00:28:06 EDT" duration-ms="774" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002806.png'>open</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- demo_screenshot_mid_test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:06 EDT" name="tearDown" finished-at="2025-09-21T00:28:07 EDT" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demo_screenshot_mid_test status=SUCCESS method=LoginTests.demo_screenshot_mid_test()[pri:0, instance:tests.LoginTests@1b1473ab] output=📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002806.png'>open</a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:07 EDT" name="setUp" finished-at="2025-09-21T00:28:07 EDT" duration-ms="800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="force_screenshot_now()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:07 EDT" name="force_screenshot_now" finished-at="2025-09-21T00:28:08 EDT" duration-ms="795" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002808.png'>open</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- force_screenshot_now -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:08 EDT" name="tearDown" finished-at="2025-09-21T00:28:08 EDT" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=force_screenshot_now status=SUCCESS method=LoginTests.force_screenshot_now()[pri:0, instance:tests.LoginTests@1b1473ab] output=📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002808.png'>open</a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:08 EDT" name="setUp" finished-at="2025-09-21T00:28:09 EDT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:09 EDT" name="invalidLogin_dataDriven" data-provider="invalidCreds" finished-at="2025-09-21T00:28:10 EDT" duration-ms="1190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_dataDriven -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:10 EDT" name="tearDown" finished-at="2025-09-21T00:28:10 EDT" duration-ms="225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_dataDriven status=SUCCESS method=LoginTests.invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:10 EDT" name="setUp" finished-at="2025-09-21T00:28:11 EDT" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:11 EDT" name="invalidLogin_dataDriven" data-provider="invalidCreds" finished-at="2025-09-21T00:28:12 EDT" duration-ms="1188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_dataDriven -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:12 EDT" name="tearDown" finished-at="2025-09-21T00:28:13 EDT" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_dataDriven status=SUCCESS method=LoginTests.invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:13 EDT" name="setUp" finished-at="2025-09-21T00:28:13 EDT" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:13 EDT" name="invalidLogin_dataDriven" data-provider="invalidCreds" finished-at="2025-09-21T00:28:14 EDT" duration-ms="1131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_dataDriven -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:14 EDT" name="tearDown" finished-at="2025-09-21T00:28:14 EDT" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_dataDriven status=SUCCESS method=LoginTests.invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:14 EDT" name="setUp" finished-at="2025-09-21T00:28:15 EDT" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:15 EDT" name="invalidLogin_dataDriven" data-provider="invalidCreds" finished-at="2025-09-21T00:28:16 EDT" duration-ms="1171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_dataDriven -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:16 EDT" name="tearDown" finished-at="2025-09-21T00:28:16 EDT" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_dataDriven status=SUCCESS method=LoginTests.invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:16 EDT" name="setUp" finished-at="2025-09-21T00:28:17 EDT" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:17 EDT" name="invalidLogin_dataDriven" data-provider="invalidCreds" finished-at="2025-09-21T00:28:18 EDT" duration-ms="1150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_dataDriven -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:18 EDT" name="tearDown" finished-at="2025-09-21T00:28:19 EDT" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_dataDriven status=SUCCESS method=LoginTests.invalidLogin_dataDriven(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:19 EDT" name="setUp" finished-at="2025-09-21T00:28:19 EDT" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin_shouldShowErrorAndStayOnLoginPage()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:19 EDT" name="invalidLogin_shouldShowErrorAndStayOnLoginPage" finished-at="2025-09-21T00:28:20 EDT" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin_shouldShowErrorAndStayOnLoginPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:20 EDT" name="tearDown" finished-at="2025-09-21T00:28:21 EDT" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin_shouldShowErrorAndStayOnLoginPage status=SUCCESS method=LoginTests.invalidLogin_shouldShowErrorAndStayOnLoginPage()[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:21 EDT" name="setUp" finished-at="2025-09-21T00:28:21 EDT" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin_shouldGoToSecureArea()[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:21 EDT" name="validLogin_shouldGoToSecureArea" finished-at="2025-09-21T00:28:23 EDT" duration-ms="1190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin_shouldGoToSecureArea -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTests@1b1473ab]" started-at="2025-09-21T00:28:23 EDT" name="tearDown" finished-at="2025-09-21T00:28:23 EDT" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin_shouldGoToSecureArea status=SUCCESS method=LoginTests.validLogin_shouldGoToSecureArea()[pri:0, instance:tests.LoginTests@1b1473ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.LoginFormValidationTest">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:29 EDT" name="setupClass" finished-at="2025-09-21T00:27:29 EDT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:29 EDT" name="setup" finished-at="2025-09-21T00:27:30 EDT" duration-ms="1347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyFieldsLoginTest()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:30 EDT" name="emptyFieldsLoginTest" description="Empty password shows an error (demo returns generic invalid)" finished-at="2025-09-21T00:27:30 EDT" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyFieldsLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:30 EDT" name="teardown" finished-at="2025-09-21T00:27:31 EDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:31 EDT" name="setup" finished-at="2025-09-21T00:27:32 EDT" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:32 EDT" name="invalidLoginTest" description="Invalid creds should keep user on login and show invalid flash" finished-at="2025-09-21T00:27:32 EDT" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:32 EDT" name="teardown" finished-at="2025-09-21T00:27:32 EDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:32 EDT" name="setup" finished-at="2025-09-21T00:27:34 EDT" duration-ms="1304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:34 EDT" name="validLoginTest" description="Valid creds should reach Secure Area and show success flash" finished-at="2025-09-21T00:27:35 EDT" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginFormValidationTest@1184ab05]" started-at="2025-09-21T00:27:35 EDT" name="teardown" finished-at="2025-09-21T00:27:35 EDT" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginFormValidationTest -->
+      <class name="tests.GoogleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@149e0f5d]" started-at="2025-09-21T00:28:03 EDT" name="setUp" finished-at="2025-09-21T00:28:04 EDT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGoogleTitle()[pri:0, instance:tests.GoogleTest@149e0f5d]" started-at="2025-09-21T00:28:04 EDT" name="testGoogleTitle" finished-at="2025-09-21T00:28:05 EDT" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@149e0f5d]" started-at="2025-09-21T00:28:05 EDT" name="tearDown" finished-at="2025-09-21T00:28:05 EDT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.GoogleTest -->
+      <class name="tests.SearchAutomationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:27:35 EDT" name="setUp" finished-at="2025-09-21T00:27:36 EDT" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptySearch_shouldStayOnHomeOrPrompt()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:27:36 EDT" name="emptySearch_shouldStayOnHomeOrPrompt" finished-at="2025-09-21T00:27:44 EDT" duration-ms="8809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptySearch_shouldStayOnHomeOrPrompt -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:27:44 EDT" name="tearDown" finished-at="2025-09-21T00:27:45 EDT" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptySearch_shouldStayOnHomeOrPrompt status=SUCCESS method=SearchAutomationTest.emptySearch_shouldStayOnHomeOrPrompt()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:27:45 EDT" name="setUp" finished-at="2025-09-21T00:27:45 EDT" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchWithSpecialCharacters_shouldNotCrash()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:27:45 EDT" name="searchWithSpecialCharacters_shouldNotCrash" finished-at="2025-09-21T00:28:03 EDT" duration-ms="17804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithSpecialCharacters_shouldNotCrash -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SearchAutomationTest@3aefe5e5]" started-at="2025-09-21T00:28:03 EDT" name="tearDown" finished-at="2025-09-21T00:28:03 EDT" duration-ms="225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchWithSpecialCharacters_shouldNotCrash status=SUCCESS method=SearchAutomationTest.searchWithSpecialCharacters_shouldNotCrash()[pri:0, instance:tests.SearchAutomationTest@3aefe5e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchAutomationTest -->
+      <class name="tests.InvalidLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:23 EDT" name="setup" finished-at="2025-09-21T00:27:25 EDT" duration-ms="1845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:25 EDT" name="testInvalidLogin" finished-at="2025-09-21T00:27:26 EDT" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:26 EDT" name="tearDown" finished-at="2025-09-21T00:27:27 EDT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:27 EDT" name="setup" finished-at="2025-09-21T00:27:27 EDT" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:27 EDT" name="testValidLogin" finished-at="2025-09-21T00:27:28 EDT" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidLoginTest@2928854b]" started-at="2025-09-21T00:27:28 EDT" name="tearDown" finished-at="2025-09-21T00:27:29 EDT" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.InvalidLoginTest -->
+    </test> <!-- All Tests -->
+  </suite> <!-- AutomationSuite -->
+</testng-results>

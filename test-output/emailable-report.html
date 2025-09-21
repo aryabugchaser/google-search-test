@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">All Tests</a></td><td class="numi">17</td><td class="numi">17</td><td class="numi">0</td><td class="numi">0</td><td class="numi">59.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">All Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td>tests.LoginTests</td><td><a href="#m1"><b>force_screenshot_now</b>  </a></td><td class="numi">1</td><td>1758428887830</td><td class="numi">795</td></tr>
+<tr class="passedeven"><td>tests.InvalidLoginTest</td><td><a href="#m2"><b>testValidLogin</b>  </a></td><td class="numi">1</td><td>1758428847743</td><td class="numi">1094</td></tr>
+<tr class="passedodd"><td>tests.SearchAutomationTest</td><td><a href="#m3"><b>searchWithSpecialCharacters_shouldNotCrash</b>  </a></td><td class="numi">1</td><td>1758428865739</td><td class="numi">17804</td></tr>
+<tr class="passedeven"><td rowspan="5">tests.LoginTests</td><td><a href="#m4"><b>invalidLogin_dataDriven</b>  </a></td><td class="numi">5</td><td>1758428889554</td><td class="numi">9243</td></tr><tr class="passedeven"><td><a href="#m5"><b>invalidLogin_dataDriven</b>  </a></td><td class="numi">5</td><td>1758428889554</td><td class="numi">9243</td></tr><tr class="passedeven"><td><a href="#m6"><b>validLogin_shouldGoToSecureArea</b>  </a></td><td class="numi">1</td><td>1758428901972</td><td class="numi">1190</td></tr><tr class="passedeven"><td><a href="#m7"><b>invalidLogin_dataDriven</b>  </a></td><td class="numi">5</td><td>1758428889554</td><td class="numi">9243</td></tr><tr class="passedeven"><td><a href="#m8"><b>invalidLogin_shouldShowErrorAndStayOnLoginPage</b>  </a></td><td class="numi">1</td><td>1758428899761</td><td class="numi">1212</td></tr>
+<tr class="passedodd"><td rowspan="3">tests.LoginFormValidationTest</td><td><a href="#m9"><b>emptyFieldsLoginTest</b>  ("Empty password shows an error (demo returns generic invalid)")</a></td><td class="numi">1</td><td>1758428850387</td><td class="numi">445</td></tr><tr class="passedodd"><td><a href="#m10"><b>validLoginTest</b>  ("Valid creds should reach Secure Area and show success flash")</a></td><td class="numi">1</td><td>1758428854155</td><td class="numi">972</td></tr><tr class="passedodd"><td><a href="#m11"><b>invalidLoginTest</b>  ("Invalid creds should keep user on login and show invalid flash")</a></td><td class="numi">1</td><td>1758428852260</td><td class="numi">422</td></tr>
+<tr class="passedeven"><td>tests.SearchAutomationTest</td><td><a href="#m12"><b>emptySearch_shouldStayOnHomeOrPrompt</b>  </a></td><td class="numi">1</td><td>1758428856017</td><td class="numi">8809</td></tr>
+<tr class="passedodd"><td>tests.LoginTests</td><td><a href="#m13"><b>invalidLogin_dataDriven</b>  </a></td><td class="numi">5</td><td>1758428889554</td><td class="numi">9243</td></tr>
+<tr class="passedeven"><td>tests.InvalidLoginTest</td><td><a href="#m14"><b>testInvalidLogin</b>  </a></td><td class="numi">1</td><td>1758428845832</td><td class="numi">1039</td></tr>
+<tr class="passedodd"><td>tests.GoogleTest</td><td><a href="#m15"><b>testGoogleTitle</b>  </a></td><td class="numi">1</td><td>1758428884530</td><td class="numi">532</td></tr>
+<tr class="passedeven"><td rowspan="2">tests.LoginTests</td><td><a href="#m16"><b>demo_screenshot_mid_test</b>  </a></td><td class="numi">1</td><td>1758428886073</td><td class="numi">774</td></tr><tr class="passedeven"><td><a href="#m17"><b>invalidLogin_dataDriven</b>  </a></td><td class="numi">5</td><td>1758428889554</td><td class="numi">9243</td></tr>
+</table>
+<h1>All Tests</h1>
+<h2 id="m1">tests.LoginTests:invalidLogin_shouldShowErrorAndStayOnLoginPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">tests.LoginTests:force_screenshot_now</h2>
+<div>
+📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002808.png'>open</a><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">tests.LoginFormValidationTest:emptyFieldsLoginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">tests.SearchAutomationTest:emptySearch_shouldStayOnHomeOrPrompt</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">tests.InvalidLoginTest:testValidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">tests.LoginFormValidationTest:validLoginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">tests.LoginTests:invalidLogin_dataDriven</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td></td>
+<td>SuperSecretPassword!</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">tests.SearchAutomationTest:searchWithSpecialCharacters_shouldNotCrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">tests.InvalidLoginTest:testInvalidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">tests.LoginTests:invalidLogin_dataDriven</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td></td>
+<td></td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">tests.LoginTests:validLogin_shouldGoToSecureArea</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">tests.LoginTests:invalidLogin_dataDriven</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>wrongUser</td>
+<td>wrongPass</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">tests.GoogleTest:testGoogleTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">tests.LoginFormValidationTest:invalidLoginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">tests.LoginTests:demo_screenshot_mid_test</h2>
+<div>
+📸 Screenshot: <a href='file:///C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/screenshots/login_page_loaded_20250921_002806.png'>open</a><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">tests.LoginTests:invalidLogin_dataDriven</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>tomsmith</td>
+<td></td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">tests.LoginTests:invalidLogin_dataDriven</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>tomsmith</td>
+<td>wrongPass</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

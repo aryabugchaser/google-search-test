@@ -1,0 +1,7 @@
+Steps:
+1-Open Login Page
+2-Enter wrong username/password
+3-Click Login
+
+Expected Result:
+Error message appears and user stays on login page

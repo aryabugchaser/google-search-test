@@ -40,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -48,8 +49,44 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "vcs.Git"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGDemo" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.XMLReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Selenium/Project/MevenSelNg/SeleniumTestNGDemo/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,11 +104,64 @@
       <option name="project" value="LOCAL" />
       <updated>1758347562358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login form validation test created">
+      <option name="closed" value="true" />
+      <created>1758417742339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758417742339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="login form validation test created">
+      <option name="closed" value="true" />
+      <created>1758417791645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758417791645</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor Search to POM (SearchPage + SearchResultsPage)">
+      <option name="closed" value="true" />
+      <created>1758425157859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758425157859</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ci: add GitHub Actions workflow">
+      <option name="closed" value="true" />
+      <created>1758429872178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758429872178</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ci: add GitHub Actions workflow updated">
+      <option name="closed" value="true" />
+      <created>1758430356968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758430356968</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ci: add GitHub Actions workflow updated">
+      <option name="closed" value="true" />
+      <created>1758430794172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758430794172</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="google test new created" />
-    <option name="LAST_COMMIT_MESSAGE" value="google test new created" />
+    <MESSAGE value="login form validation test created" />
+    <MESSAGE value="Refactor Search to POM (SearchPage + SearchResultsPage)" />
+    <MESSAGE value="ci: add GitHub Actions workflow" />
+    <MESSAGE value="ci: add GitHub Actions workflow updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci: add GitHub Actions workflow updated" />
   </component>
 </project>

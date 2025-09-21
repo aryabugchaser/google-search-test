@@ -23,7 +23,7 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-        if (System.getenv("CI") != null) { // running on GitHub Actions
+        if (System.getenv("CI") != null) { // on GitHub Actions
             options.addArguments("--headless=new",
                     "--no-sandbox",
                     "--disable-dev-shm-usage",
@@ -34,7 +34,7 @@ public class BaseTest {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod(alwaysRun = true)
+        @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         try {
             if (driver != null && result.getStatus() == ITestResult.FAILURE) {
