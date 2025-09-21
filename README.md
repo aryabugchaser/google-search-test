@@ -1,3 +1,7 @@
+
+![Maven Tests](https://github.com/aryabugchaser/google-search-test/actions/workflows/maven-tests.yml/badge.svg)
+
+
 # QA Demo Project 🚀
 
 This is a sample **QA Automation project** using:
@@ -15,3 +19,4 @@ This is a sample **QA Automation project** using:
 ```bash
 # run all tests
 mvn clean test -Dsurefire.suiteXmlFiles=testng-ci.xml
+
